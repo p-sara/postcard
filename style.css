@@ -1,0 +1,27 @@
+body {
+  display:flex;
+  background-color: #cfe8ea;
+}
+.postcard {
+  position: relative;
+  margin:auto;
+  height:384px;
+  width:576px;
+}
+.postcard-front, .postcard-back {
+  position:absolute;
+  backface-visibility: hidden;
+  transition: transform 1s ease-in-out;
+}
+.postcard .postcard-back {
+  transform: rotate(180deg);
+}
+.csstransforms3d.csstransitions .postcard:hover .postcard-front {
+  transform: rotateY(180deg);
+}
+.csstransforms3d.csstransitions .postcard:hover .postcard-back {
+  transform: rotateY(360deg);
+}
+.no-csstransforms3d .postcard:hover .postcard-front, .no-csstransforms3d .postcard:hover .postcard-back {
+  display:none;
+}
