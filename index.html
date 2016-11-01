@@ -1,19 +1,51 @@
 <!DOCTYPE>
 <html>
+
 <head>
-<meta tag="UTF-8">
+  <meta tag="UTF-8">
   <title>Holiday postcard</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
   <script src="modernizr-custom.js"></script>
 </head>
-  <body>
-  <div class="postcard">
-    <div class="postcard-back">
-    <img src="postcardback.jpg"/>
+
+<body>
+  <section class="slider-section">
+    <div id="left" class="hidden animated">
+      <ul>
+        <li>Explore the country</li>
+        <li>Have some fun in Asia</li>
+        <li>Fancy historical Europe?</li>
+      </ul>
     </div>
-    <div class="postcard-front">
-    <img src="sea.jpg"/>
+    <div id="right" class="hidden animated">
+      <!--<ul>
+        <li><img src="img/stonehenge.jpg"/></li>
+        <li><img src="img/paris.jpg"/></li>
+        <li><img src="img/china.jpg"/></li>
+      </ul>-->
     </div>
+    
+    <div id="icon"><a href="#" onclick="menu();">&#9776</a></div>
+    <div id="content">
+      <span><h1>Don't wait! Sign up for the best trip of your life today!</h1></span>
     </div>
-  </body>
+  </section>
+  <section class="postcard-section">
+    <div class="postcard">
+      <div class="postcard-back">
+        <img src="img/postcardback.jpg" />
+      </div>
+      <div class="postcard-front">
+        <img src="img/sea.jpg" />
+      </div>
+    </div>
+  </section>
+  <section class="box-shadow">
+      <img src="img/yolo.jpg"/>
+    </section>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+
 </html>

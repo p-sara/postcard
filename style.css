@@ -1,4 +1,8 @@
-body {
+section {
+  height:95vh;
+}
+/*--------POSTCARD---------*/
+.postcard-section {
   display:flex;
   background-color: #cfe8ea;
 }
@@ -14,7 +18,7 @@ body {
   transition: transform 1s ease-in-out;
 }
 .postcard .postcard-back {
-  transform: rotate(180deg);
+  transform: rotateY(180deg);
 }
 .csstransforms3d.csstransitions .postcard:hover .postcard-front {
   transform: rotateY(180deg);
@@ -24,4 +28,86 @@ body {
 }
 .no-csstransforms3d .postcard:hover .postcard-front, .no-csstransforms3d .postcard:hover .postcard-back {
   display:none;
+}
+
+/*--------SLIDER---------*/
+.slider-section{
+  font-size:0;
+}
+#icon{
+  position:absolute;
+  top:1%; left:1%;
+  font-size:50px;
+  z-index:250;
+}
+#icon a {
+  text-decoration:none;
+  color:#fff;
+}
+#left {
+  background-color:rgba(255,255,0,0.3);
+  width:40%;
+  position:absolute;
+}
+#left ul {
+ font-size: 27px;
+ list-style-type: none;
+  font-family: 'Coiny', cursive;
+  color: #fff;
+  text-shadow: 
+    4px 2px 4px #000;
+  position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#left ul li:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+#right {
+  background-color:black;
+  width:60%;
+  position:absolute;
+  right:0;
+  z-index:1;
+}
+.animated {
+  height:100%;
+  display:inline-block;
+  margin:0;
+}
+#content {
+  height:100%;
+  width:100%;
+  background-image: url(img/car.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#content span {
+  background-color:rgba(255,255,0,0.3);
+  width:30%;
+  height:200px;
+  border-radius:50%;
+  text-align:center;
+  display:flex;
+  position:relative;
+  left:60%;
+  top:10%
+}
+#content span h1{
+  width:80%;
+  margin:auto;
+  font-family: 'Coiny', cursive;
+  font-size:22px;
+}
+.hidden {
+  display:none;
+}
+
+.box-shadow {
+  display:flex;
+}
+.box-shadow img {
+  margin:auto;
+  box-shadow: 0 0 0 5px #000000, 0 0 0 10px #080808, 0 0 0 15px #111111, 0 0 0 20px #1A1A1A, 0 0 0 25px #232323, 0 0 0 30px #2B2B2B, 0 0 0 35px #343434, 0 0 0 40px #3D3D3D, 0 0 0 45px #464646, 0 0 0 50px #4F4F4F, 0 0 0 55px #575757, 0 0 0 60px #606060, 0 0 0 65px #696969, 0 0 0 70px #727272, 0 0 0 75px #7B7B7B, 0 0 0 80px #838383, 0 0 0 85px #8C8C8C, 0 0 0 90px #959595, 0 0 0 95px #9E9E9E, 0 0 0 100px #A7A7A7, 0 0 0 105px #AFAFAF, 0 0 0 110px #B8B8B8, 0 0 0 115px #C1C1C1, 0 0 0 120px #CACACA, 0 0 0 125px #D3D3D3, 0 0 0 130px #DBDBDB, 0 0 0 135px #E4E4E4, 0 0 0 140px #EDEDED, 0 0 0 145px #F6F6F6, 0 0 0 150px #FEFEFE, 0 0 0 155px #FFFFFF;
 }
